@@ -1,0 +1,25 @@
+.panel-register-form * div{
+    background-color: transparent !important;
+    margin-top: 0 !important;
+    &::after{
+        border-bottom: unset !important;;
+    }
+    &::before{
+        border-bottom: unset !important;;
+    }
+    input{
+        padding-top: 5px;
+    }
+}
+.button-submit{
+    text-align: center;
+    button{
+        background-color: #009c93;
+        border-color: #009c93;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

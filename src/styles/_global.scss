@@ -1,0 +1,37 @@
+@import "./fonts/SVN-Poppins.scss";
+@import url("https://pro.fontawesome.com/releases/v5.15.4/css/all.css");
+
+* {
+  box-sizing: border-box;
+  font-family: SVN-Poppins !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  mjx-container[jax="CHTML"][display="true"] {
+    display: inline !important;
+  }
+}
+@mixin ellipsis-text($line) {
+  &.dot-#{$line} {
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line !important;
+  }
+}
+.text_error{
+  color: red;
+  font-size: 12px;
+  border-top: 1px solid red;
+  margin: 0;
+  padding-top: 5px;
+}
