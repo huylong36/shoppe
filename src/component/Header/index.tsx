@@ -62,7 +62,9 @@ export default function Header(props: Props) {
     setAnchorElUser(null);
   };
 
-  
+  const handleBackdropClick = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
 
   return (
 
@@ -192,7 +194,7 @@ export default function Header(props: Props) {
       </Container>
     </AppBar>
 
-      <Dialog disableEscapeKeyDown hideBackdrop open={open} onClose={handleClose} fullWidth maxWidth="md">
+      <Dialog disableEscapeKeyDown keepMounted hideBackdrop open={open} BackdropProps={{ }} onClose={handleClose} fullWidth maxWidth="md">
         <DialogContent>
           <Register />
         </DialogContent>
